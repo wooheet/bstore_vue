@@ -1,0 +1,115 @@
+#send-yeed-step-2 {
+    margin-top: 59px;
+
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+
+    #total-wrapper {
+        width: 100%;
+        border-bottom: solid 3px #accec0;
+        margin-bottom: 30px;
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+
+            .amount {
+                display: inline;
+                vertical-align: text-bottom;
+                margin-right: 5px;
+
+                font-size: 26px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.46;
+                letter-spacing: normal;
+                text-align: left;
+                color: #0c1d1d;
+            }
+
+            .unit {
+                display: inline;
+                vertical-align: text-bottom;
+
+                font-size: 14px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: left;
+                color: #0c1d1d;
+            }
+
+            .transaction-fee {
+                font-size: 12px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: right;
+                color: #1b3031;
+
+                div {
+                    margin: 4px;
+                }
+            }
+        }
+    }
+
+    .total {
+        height: 38px;
+        padding: 11px 20px;
+        background-color: #e7f5ef;
+    }
+
+    .transaction {
+        padding: 10px 20px;
+
+        .field {
+            padding: 10px 0px;
+            display: flex;
+            justify-content: space-between;
+
+            .key {
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: left;
+                color: #1b3031;
+            }
+
+            .value {
+                font-size: 12px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: right;
+                color: #96afb2;
+            }
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        * {
+            margin: 5px auto;
+        }
+    }
+    
+    .actions {
+        display: flex;
+        justify-content: space-around;
+    }
+}

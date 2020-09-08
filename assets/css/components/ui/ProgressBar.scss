@@ -1,0 +1,56 @@
+.progress {
+    width: 100%;
+    display: flex;
+
+    .step {
+        display: flex;
+
+        width: 100%;
+        height: 30px;
+
+        &.last {
+            width: 30px;
+        }
+
+        .step-circle {
+            flex: 0 0 30px !important;
+            height: 30px;
+
+            border-radius: 15px;
+            border: 2px solid #accec0;
+
+            &.progressed {
+                background-color:  #accec0;
+                color: #ffffff;
+            }
+
+            text-align: center;
+
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 30px;
+            letter-spacing: normal;
+
+            color: #accec0;
+
+        }
+
+        .divider {
+            position: relative;
+            width: 100%;
+            height: 0px;
+
+            top: 50%;
+
+            margin: 0px 10px;
+            line-height: 30px;
+            border-bottom: dashed 2px #accec0;
+
+            &.remains {
+                border-bottom: solid 2px #accec0;
+            }
+        }
+    }
+}

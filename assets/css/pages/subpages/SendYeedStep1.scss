@@ -1,0 +1,83 @@
+#send-yeed-step-1 {
+    display: flex;
+    justify-content: space-between;
+
+    #select-token {
+        flex-basis: 290px;
+        margin-top: 30px;
+        margin-bottom: 47px;
+        padding: 30px;
+        height: 633px;
+        border-radius: 5px;
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.15);
+        background-color: #ffffff;
+
+        .tokens {
+            margin-top: 40px;
+
+            .token-label {
+                height: 20px;
+                font-size: 14px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.43;
+                letter-spacing: normal;
+                text-align: left;
+                color: #1b3031;
+
+                &::first-letter {
+                    color: #4fccaa;
+                    margin-right: 5px;
+                }
+
+            }
+
+            .value {
+                margin-top: 4px;
+                margin-left: 22px;
+
+                font-size: 12px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: left;
+                color: #96afb2;
+            }
+        }
+    }
+
+    #enter-information {
+        flex-basis: 510px;
+        margin-top: 59px;
+
+        #transaction-fee {
+            display: flex;
+            justify-content: space-between;
+
+            #label {
+                flex-basis: 170px;
+
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #result {
+                display: flex;
+                justify-content: flex-end;
+
+                #amount {
+
+                }
+
+                #unit {
+                    margin-left: 38px;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

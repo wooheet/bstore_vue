@@ -1,0 +1,47 @@
+.create-account-steps {
+    margin-top: 60px;
+}
+
+.actions {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+
+    .padding {
+        flex-basis: 20px;
+    }
+}
+
+.popper {
+    background-color: #1b3031;
+    padding: 5px;
+
+    transition: all 0.1s ease-in-out;
+
+    ul {
+        padding: 0px 10px;
+        text-align: left;
+        color: #dc5555;
+
+        list-style-type: none;
+
+        .valid {
+            color: #00ffc4
+        }
+
+        li {
+            font-size: 8px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2;
+            letter-spacing: normal;
+            text-align: left;
+        }
+    }
+}
+
+.popper__arrow {
+    background-color: #1b3031 !important;
+    border-color: #1b3031;
+}

@@ -1,0 +1,144 @@
+@import "~/assets/css/mixins/const.scss";
+
+label {
+    height: 15px;
+    font-size: 10px;
+}
+
+.field-wrapper {
+    width: 100%;
+    display: flex;        
+    height: 50px;
+    align-content: center;
+    
+    border-bottom: solid 2px #accec0;
+    
+
+    input {
+        width: calc(100% - 10px);
+        padding: 10px 0px;
+        height: 30px;
+
+        font-size: 14px;
+        line-height: 1.43;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.43;
+        letter-spacing: normal;
+        text-align: left;
+        color: $form-text-color;
+
+        background: transparent;
+        border: none;
+
+
+        &:disabled {
+            height: 30px;
+            padding: 10px 10px;
+
+            font-size: 14px;
+            line-height: 1.43;
+
+            font-weight: bold;
+
+            opacity: 0.5;
+        }
+    }
+
+
+    input[type='number'] {
+        width: 100%;
+        background: transparent;
+
+        padding: 0px;
+        border: 0px;
+        height: 50px;
+        font-size: 26px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.46;
+        letter-spacing: normal;
+        text-align: left;
+        color: #0c1d1d;
+    }
+
+    &.focused {
+        transition: all .5s ease-in-out;
+        border-bottom: solid 2px #0c1d1d;
+    }
+
+    &.error {
+        transition: all .5s ease-in-out;
+        border-bottom: solid 2px #dc5555;
+    }
+    
+    &.primary {
+        height: 40px;
+        background-color: #e7f5ef;
+
+        .field {
+            padding: 0px 20px;
+
+            input {
+                height: 20px;
+            }
+        }
+
+        &.focus {
+            color: #BACAC5;
+        }
+    }
+
+    .vertical-align {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        .field {
+            width: 100%;
+    
+            input {
+                &:focus { 
+                    background-image: none;
+                    outline: 0;
+                    box-shadow: none;
+                }
+            }
+    
+            &::placeholder {
+                opacity: 0.5;
+            }
+        }
+
+        .front-annotation, .rear-annotation {
+            display: flex;
+            align-items: center;
+            line-height: 1;
+        }
+
+        .front-annotation {
+            padding: 0px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.43;
+            letter-spacing: normal;
+            text-align: left;
+            color: #1b3031;
+        }
+    }
+}
+
+.error-wrapper {
+    width: calc(100% - 20px);
+    height: 20px;
+    padding: 10px 10px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #dc5555;
+}

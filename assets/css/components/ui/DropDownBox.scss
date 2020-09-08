@@ -1,0 +1,51 @@
+@import '~/assets/css/mixins/const.scss';
+
+.drop-down-box {
+    width: inherit;
+    ul {
+        display: none;
+        z-index: 1;
+
+        &.active {
+            display: block;
+            width: inherit;
+            position: absolute;
+            padding: 5px 20px;
+
+            border-radius: 6px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+            background-color: $sidebar-color;
+            z-index: 999;
+
+            li {
+                padding: 10px 10px;
+                height: 15px;
+                display: block;
+                border-radius: 5px;
+
+                font-size: 10px;
+                line-height: 1.5;
+                color: $sidebar-menu-color;
+
+                &::before {
+                    content: '\2022';
+                    margin-right: 5px;
+                    font-size: 15px;
+                    line-height: 15px;
+                }
+
+                &.active {
+                    color: #6ad1ba;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.05);
+                    color: white;
+                    font-weight: 500;
+                    transition: all 0.1s ease-in-out;
+                }
+            }
+        }
+    }
+}
