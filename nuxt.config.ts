@@ -10,7 +10,7 @@ export default {
       { hid: "description", name: "description", content: "YGGDRASH WALLET" },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: 'favicon-bs.png' }
     ]
   },
   loading: { color: "#3B8070" },

@@ -4,36 +4,8 @@
       <h1 class="header">Welcome to BStore</h1>
       <h2 class="header">환영합니다 아름다운 가게에서 기부 및 기증을 해보세요!</h2>
       <div class="buttons">
-        <template v-if="!$store.state.modules.yggdrash.address">
-          <custom-button 
-            :onClick="goToCreateAccount"
-            has-gradation=""
-            is-create-account="">
-            <img src="~/assets/icons/sidebar_create_account_icon.svg" alt="Create Account"/>
-            기부
-          </custom-button>
-        </template>
-        <custom-button 
-          :onClick="goToViewAccount"
-          has-gradation=""
-          is-view-account="">
-          기증
-        </custom-button>
-        <custom-button 
-          :onClick="goToSendYeed"
-          has-gradation=""
-          is-send-token="">
-          test
-        </custom-button>
-        <template v-if="$store.state.modules.yggdrash.address">
-          <custom-button 
-            :onClick="goToYeedFaucet"
-            has-gradation=""
-            is-create-account="">
-            <img src="~/assets/icons/sidebar_yeed_faucet_icon.svg" alt="YEED Faucet"/>
-            YEED Faucet
-          </custom-button>
-        </template>
+        map
+
       </div>
 
       <div class="description">

@@ -1,7 +1,9 @@
+<script src="../types/transaction.d.ts"></script>
+<script src="../store/index.ts"></script>
 <template>
   <div id="layout">
     <section id="sidebar">
-      <img src="http://www.beautifulstore.org/wp-content/themes/bs/images/brand.png" alt="Beautiful Store"
+      <img class="logo" src="http://www.beautifulstore.org/wp-content/themes/bs/images/brand.png" alt="Beautiful Store"
            width="182" height="48" srcset="http://www.beautifulstore.org/wp-content/themes/bs/images/brand@2x.png 2x"
            @click='$router.push("/")'>
       <ul id="sidebar-menu">

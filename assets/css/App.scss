@@ -28,7 +28,7 @@ h2.header {
     line-height: 1.31;
     letter-spacing: normal;
     text-align: left;
-    color: $header-color;
+    color: #b2abab;
 }
 
 h3.header {
@@ -109,6 +109,10 @@ div.step-plate {
         background-color: $sidebar-color;
         color: $sidebar-menu-color;
 
+        img.logo {
+            cursor: pointer;
+        }
+
         ul#sidebar-menu {
             padding: 0;
             padding-top: 50px;
@@ -128,7 +132,7 @@ div.step-plate {
                 list-style-type: none;
 
                 &.active {
-                    color: white;
+                    color: gray;
                 }
 
                 &:hover {
@@ -188,11 +192,11 @@ div.step-plate {
             background-color: $layout-background-dark;
 
             h1.header {
-                color: white;
+                color: gray;
             }
 
             h2.header {
-                color: $sidebar-menu-color;
+                color: #b2abab;
             }
         }
 
